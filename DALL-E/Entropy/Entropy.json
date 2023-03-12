@@ -3,31 +3,45 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Screen1": 3
+    "GenerateImage": 5,
+    "ImageGenerationScreen": 3,
+    "SearchTextInput": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/12/2023 11:52:42",
+  "HeaderLastSavedDateTimeUTC": "03/12/2023 12:19:26",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "6025f320-4658-4689-b5b1-f70544251ffd": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/DA89264977644DAC8D791A353E3207D9-059A22BE937D37BF\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "colImageResult": 1,
+    "ImageGenerationFlow": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 1,
+    "text": 0
+  },
   "OverridablePropertiesEntry": {
     "App": {},
-    "Screen1": {}
+    "GenerateImage": {},
+    "ImageGenerationScreen": {},
+    "SearchTextInput": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Screen1": 0
+    "GenerateImage": 1,
+    "ImageGenerationScreen": 0,
+    "SearchTextInput": 0
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
@@ -35,7 +49,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0160111,
     "ControlCount": {},
-    "ErrorCount": 0
+    "ErrorCount": 2
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

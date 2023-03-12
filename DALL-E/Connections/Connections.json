@@ -1,1 +1,35 @@
-{}
+{
+  "6025f320-4658-4689-b5b1-f70544251ffd": {
+    "connectionParameters": {
+      "logicAppHostType": "ARM",
+      "workFlowCallbackUri": "https://prod-126.westeurope.logic.azure.com:443/workflows/b4c2da080e8d4ba19f978c101a54d1d9/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=OSRVCK5KZZMgEOr3BdX8e2gToHlXyZ2myKtuVMlyJhw",
+      "workflowEndpoint": "/subscriptions/71b6eb3f-48a4-46b7-9df4-8ec119fc2a11/resourceGroups/7369e6ecfaa642fabc0e4f332da5b1db-fdc1097191d241f2956bd0499615d31e/providers/Microsoft.Logic/workflows/da892649-7764-4dac-8d79-1a353e3207d9",
+      "workflowName": "da892649-7764-4dac-8d79-1a353e3207d9",
+      "workflowPath": "/subscriptions/71b6eb3f-48a4-46b7-9df4-8ec119fc2a11/resourceGroups/7369e6ecfaa642fabc0e4f332da5b1db-fdc1097191d241f2956bd0499615d31e/providers/Microsoft.Logic/workflows/da892649-7764-4dac-8d79-1a353e3207d9"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "da892649-7764-4dac-8d79-1a353e3207d9"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "da892649-7764-4dac-8d79-1a353e3207d9"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ImageGenerationFlow"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6025f320-4658-4689-b5b1-f70544251ffd"
+  }
+}
