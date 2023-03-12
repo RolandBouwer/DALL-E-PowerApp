@@ -5,14 +5,17 @@
     "App": 1,
     "GenerateImage": 5,
     "ImageGenerationScreen": 3,
+    "Label1": 8,
+    "Rectangle1": 7,
+    "SearchedImage": 6,
     "SearchTextInput": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/12/2023 12:19:26",
+  "HeaderLastSavedDateTimeUTC": "03/12/2023 12:32:09",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "6025f320-4658-4689-b5b1-f70544251ffd": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/DA89264977644DAC8D791A353E3207D9-059A22BE937D37BF\""
+    "ae70556a-d315-4e1b-95fd-9a155ca3e3f2": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/DA89264977644DAC8D791A353E3207D9-059A22BE937D37BF\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -27,13 +30,19 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 1,
+    "button": 3,
+    "image": 4,
+    "label": 2,
+    "rectangle": 1,
     "text": 0
   },
   "OverridablePropertiesEntry": {
     "App": {},
     "GenerateImage": {},
     "ImageGenerationScreen": {},
+    "Label1": {},
+    "Rectangle1": {},
+    "SearchedImage": {},
     "SearchTextInput": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
@@ -41,15 +50,20 @@
     "App": 0,
     "GenerateImage": 1,
     "ImageGenerationScreen": 0,
+    "Label1": 0,
+    "Rectangle1": 0,
+    "SearchedImage": 2,
     "SearchTextInput": 0
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0160111,
     "ControlCount": {},
-    "ErrorCount": 2
+    "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

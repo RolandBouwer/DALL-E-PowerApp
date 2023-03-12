@@ -33,15 +33,42 @@ ImageGenerationScreen As screen:
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =Set(varImage,ImageGenerationFlow.Run(SearchTextInput.Text));
-            ClearCollect
-            (
-                colImageResult,
-                varImage.Result
-            )
+            ClearCollect(colImageResult,varImage.result)
         Size: =15
         Text: ="Generate Image"
         Width: =263
         X: =1003
         Y: =178
         ZIndex: =2
+
+    SearchedImage As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =445
+        Image: =First(colImageResult).Value
+        Width: =858
+        X: =282
+        Y: =282
+        ZIndex: =3
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =80
+        Width: =1366
+        ZIndex: =4
+
+    Label1 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =26
+        Text: ="Image Generation"
+        Width: =408
+        X: =507
+        Y: =18
+        ZIndex: =5
 
