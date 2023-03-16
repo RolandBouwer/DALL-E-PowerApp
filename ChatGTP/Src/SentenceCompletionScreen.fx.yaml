@@ -42,8 +42,8 @@ SentenceCompletionScreen As screen:
             )
         Size: =30
         Text: ="ChatGPT response"
-        Width: =399
-        X: =189
+        Width: =425
+        X: =162
         Y: =310
         ZIndex: =2
 
