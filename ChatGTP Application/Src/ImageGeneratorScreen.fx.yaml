@@ -1,0 +1,141 @@
+ImageGeneratorScreen As screen:
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Image1 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Image: =images
+        Y: =145
+        ZIndex: =6
+
+    grpHeader As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =6
+
+        LblHeaderTItle As label:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(94, 70, 128, 1)
+            FocusedBorderColor: =LblHeaderTItle.BorderColor
+            Font: =Font.'Patrick Hand'
+            Height: =130
+            HoverBorderColor: =LblHeaderTItle.BorderColor
+            HoverColor: =LblHeaderTItle.Color
+            HoverFill: =LblHeaderTItle.Fill
+            PressedBorderColor: =LblHeaderTItle.BorderColor
+            PressedColor: =LblHeaderTItle.Color
+            PressedFill: =LblHeaderTItle.Fill
+            Size: =30
+            Text: ="Image Generator"
+            Width: =768
+            ZIndex: =1
+
+        imgUser As image:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =115
+            Image: =User().Image
+            RadiusBottomLeft: =80
+            RadiusBottomRight: =80
+            RadiusTopLeft: =80
+            RadiusTopRight: =80
+            Width: =115
+            X: =635
+            Y: =7
+            ZIndex: =2
+
+        imgLogoSBFilters As image:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =114
+            Image: =sbgl_SB_Theme_Logo
+            Width: =90
+            X: =27
+            Y: =16
+            ZIndex: =3
+
+        icoPrevDCFilters As icon.NextArrow:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            Fill: =Color.Transparent
+            Height: =73
+            HoverColor: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.NextArrow
+            PressedColor: =Self.Fill
+            Width: =80
+            X: =515
+            Y: =28
+            ZIndex: =4
+
+        icoNextDCFilters As icon.NextArrow:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            Fill: =Color.Transparent
+            Height: =73
+            HoverColor: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.BackArrow
+            PressedColor: =Self.Fill
+            Width: =80
+            X: =145
+            Y: =28
+            ZIndex: =5
+
+    txtSearchText As text:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =86
+        HintText: ="Enter Text to Generate Image"
+        HoverBorderColor: =RGBA(92, 74, 168, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(185, 173, 246, 1)
+        Size: =30
+        Width: =741
+        X: =9
+        Y: =259
+        ZIndex: =7
+
+    btnGenerateImage As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =91
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(30, 14, 91, 1), -20%)
+        OnSelect: =Set(varResponse,ChatGTP.ImageGenerator(txtSearchText,1,"1024x1024"))
+        Size: =30
+        Text: ="Generate Image"
+        Width: =370
+        X: =199
+        Y: =399
+        ZIndex: =8
+
+    ImageGenerated As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =465
+        Image: =First(varResponse.data).url
+        Width: =768
+        Y: =546
+        ZIndex: =9
+

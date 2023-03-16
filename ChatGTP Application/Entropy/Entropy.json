@@ -1,0 +1,105 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "btnGenerateImage": 15,
+    "grpHeader": 12,
+    "icoNextDCFilters": 7,
+    "icoPrevDCFilters": 8,
+    "Image1": 13,
+    "ImageGenerated": 16,
+    "ImageGeneratorScreen": 3,
+    "imgLogoSBFilters": 9,
+    "imgUser": 10,
+    "LblHeaderTItle": 11,
+    "txtSearchText": 14
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "03/16/2023 15:30:58",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "d248655d-7996-4669-b5a2-339c65a17b0c": "\"/providers/microsoft.powerapps/apis/shared_chatgtp-5f31fd668b59bc497e-5f9d34e182d4545fa0/connections/282f5637693c407c92905d62c5d4b083\""
+  },
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {
+    "images": "3d4d1a56-6367-4e1a-a51a-519ddd96e3cf.png",
+    "sbgl_SB_Theme_Logo": "dcebf172-5c25-4732-af5e-1dd40146ab9d.png"
+  },
+  "LocalResourceRootPaths": {
+    "images": "https://docserverpwaprodweu.blob.core.windows.net/63f5a80e-2de9-4401-9126-f7ca9a108d3d-1/resource/1abbcd5f-1c29-4262-a46d-6a600b7d783b.png?sv=2018-03-28&sr=b&sig=7jmEFYyrg4Lviuq0h7nuk1qmHsM6xiKeiQH7yJWPQso%3D&spr=https&se=2023-03-17T15%3A20%3A37Z&sp=r",
+    "sbgl_SB_Theme_Logo": "https://docserverpwaprodweu.blob.core.windows.net/63f5a80e-2de9-4401-9126-f7ca9a108d3d-1/resource/d1ecbf93-d139-4114-aec9-571b556c1ed1.png?sv=2018-03-28&sr=b&sig=oznbZ7BcSNYRpTUFbM6V9Oa9zzWCZmKpZOfacLAtmTQ%3D&spr=https&se=2023-03-17T15%3A22%3A23Z&sp=r"
+  },
+  "OldLogoFileName": "ymowacbh.jpg",
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "ChatGTP": 0
+  },
+  "OrderGroupControls": {
+    "grpHeader": {
+      "icoNextDCFilters": 0,
+      "icoPrevDCFilters": 1,
+      "imgLogoSBFilters": 2,
+      "imgUser": 3,
+      "LblHeaderTItle": 4
+    }
+  },
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 4,
+    "icon": 2,
+    "image": 1,
+    "label": 0,
+    "text": 3
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "btnGenerateImage": {},
+    "grpHeader": {},
+    "icoNextDCFilters": {},
+    "icoPrevDCFilters": {},
+    "Image1": {},
+    "ImageGenerated": {},
+    "ImageGeneratorScreen": {},
+    "imgLogoSBFilters": {},
+    "imgUser": {},
+    "LblHeaderTItle": {},
+    "txtSearchText": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "btnGenerateImage": 8,
+    "grpHeader": 4,
+    "icoNextDCFilters": 3,
+    "icoPrevDCFilters": 5,
+    "Image1": 6,
+    "ImageGenerated": 9,
+    "ImageGeneratorScreen": 0,
+    "imgLogoSBFilters": 2,
+    "imgUser": 1,
+    "LblHeaderTItle": 0,
+    "txtSearchText": 7
+  },
+  "ResourcesJsonIndices": {
+    "Image-images": 1,
+    "Image-SampleImage": 0,
+    "Image-sbgl_SB_Theme_Logo": 2
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.01871,
+    "ControlCount": {
+      "group": 1,
+      "icon": 2,
+      "image": 2,
+      "label": 2
+    },
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

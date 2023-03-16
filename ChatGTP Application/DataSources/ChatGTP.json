@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_chatgtp-5f31fd668b59bc497e-5f9d34e182d4545fa0",
+    "Name": "ChatGTP",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

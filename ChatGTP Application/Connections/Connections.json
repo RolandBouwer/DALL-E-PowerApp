@@ -1,0 +1,19 @@
+{
+  "d248655d-7996-4669-b5a2-339c65a17b0c": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "ChatGTP",
+      "iconUri": "https://prodapiicons.cdn.powerappscdn.net/20230316t000000z42173ed9ed844a3f8c8035107e7a984e/customconnectoricon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_chatgtp-5f31fd668b59bc497e-5f9d34e182d4545fa0"
+    },
+    "datasets": {},
+    "dataSources": [
+      "ChatGTP"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d248655d-7996-4669-b5a2-339c65a17b0c"
+  }
+}

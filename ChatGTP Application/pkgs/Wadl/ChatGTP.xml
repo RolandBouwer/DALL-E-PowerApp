@@ -1,0 +1,64 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/chatgtp-5f31fd668b59bc497e-5f9d34e182d4545fa0" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="ChatGTP" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="ChatGTP">Default Custom Connector for ChatGTP</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/chatgtp-5f31fd668b59bc497e-5f9d34e182d4545fa0" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ImageGenerator_param_body_def_prompt_def" />
+      <integer name="ImageGenerator_param_body_def_n_def" />
+      <string name="ImageGenerator_param_body_def_size_def" />
+      <object name="ImageGenerator_param_body_def">
+        <property name="prompt" type="string" />
+        <property name="n" type="integer" />
+        <property name="size" type="string" />
+      </object>
+      <integer name="ImageGenerator_responses_default_def_created_def" />
+      <string name="ImageGenerator_responses_default_def_data_def_items_def_url_def" />
+      <object name="ImageGenerator_responses_default_def_data_def_items_def">
+        <property name="url" type="string" />
+      </object>
+      <array typeRef="ImageGenerator_responses_default_def_data_def_items_def" name="ImageGenerator_responses_default_def_data_def" />
+      <object name="ImageGenerator_responses_default_def">
+        <property name="created" type="integer" />
+        <property name="data" typeRef="ImageGenerator_responses_default_def_data_def" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/chatgtp-5f31fd668b59bc497e-5f9d34e182d4545fa0">
+    <resource path="/{connectionId}/v1/images/generations">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="ImageGenerator" actionName="ImageGenerator" siena:isDeprecated="false">
+        <doc title="Image Generator&#xA;The image generations endpoint allows you to create an original image given a text prompt. Generated images can have a size of 256x256, 512x512, or 1024x1024 pixels. Smaller sizes are faster to generate. You can request 1-10 images at a time using the n parameter." />
+        <request>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed="application/json" />
+          <representation mediaType="application/json">
+            <param style="plain" name="prompt" path="/prompt" type="xs:string" required="true">
+              <doc title="Text to generate Image(s)" />
+            </param>
+            <param style="plain" name="n" path="/n" type="xs:int" required="true" default="1">
+              <doc title="Number of Images" />
+              <option value="1" />
+              <option value="5" />
+              <option value="10" />
+            </param>
+            <param style="plain" name="size" path="/size" type="xs:string" required="true" default="1024x1024">
+              <doc title="Image Size" />
+              <option value="256x256" />
+              <option value="512x512" />
+              <option value="1024x1024" />
+            </param>
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ImageGenerator_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_chatgtp-5f31fd668b59bc497e-5f9d34e182d4545fa0" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
