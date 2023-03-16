@@ -1,63 +1,25 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "HtmlText1": 6,
-    "Icon1": 7,
-    "SearchButton": 5,
-    "SearchTextInput": 4,
-    "SentenceCompletionScreen": 3
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/16/2023 13:36:58",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {
-    "eb50fa57-93aa-4564-868c-369fb928d8c3": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/83e5a6aabfa1426c91f3f22874be827e-059a22be937d37bf\""
-  },
+  "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {
-    "colResult": 1,
-    "SentenceCompletion": 0
-  },
+  "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "button": 2,
-    "htmlViewer": 3,
-    "icon": 1,
-    "text": 0
-  },
-  "OverridablePropertiesEntry": {
-    "App": {},
-    "HtmlText1": {},
-    "Icon1": {},
-    "SearchButton": {},
-    "SearchTextInput": {},
-    "SentenceCompletionScreen": {}
-  },
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {},
   "PCFDynamicSchemaForIRRetrievalEntry": {},
-  "PublishOrderIndices": {
-    "App": 0,
-    "HtmlText1": 3,
-    "Icon1": 1,
-    "SearchButton": 2,
-    "SearchTextInput": 0,
-    "SentenceCompletionScreen": 0
-  },
+  "PublishOrderIndices": {},
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.0149405,
-    "ControlCount": {},
-    "ErrorCount": 0
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
